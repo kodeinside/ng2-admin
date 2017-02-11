@@ -24,10 +24,23 @@ export const PAGES_MENU = [
                 }
             },
             {
-                path: 'materia',
-                data: {
+                path: 'cliente',
+                data: { 
+                    path: 'clienteList',
                     menu: {
-                        title: 'Publicar Matéria',
+                        title: 'Cliente List',
+                        icon: 'ion-android-home',
+                        selected: false,
+                        expanded: false,
+                        order: 0
+                    }
+                }
+            },
+            {
+                path: 'materia',
+                data: { 
+                    menu: {
+                        title: 'Materia',
                         icon: 'ion-android-home',
                         selected: false,
                         expanded: false,
@@ -39,7 +52,7 @@ export const PAGES_MENU = [
                 path: 'artigo',
                 data: {
                     menu: {
-                        title: 'Publicar Matéria',
+                        title: 'Artigo',
                         icon: 'ion-android-home',
                         selected: false,
                         expanded: false,
