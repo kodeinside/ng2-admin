@@ -10,7 +10,7 @@ export class BaMultiSelect {
   @Input() data = [];
   @Input() size: number = 5;
 
-  @Output() select: EventEmitter = new EventEmitter();
+  @Output() select: EventEmitter<any> = new EventEmitter();
 
   set selected(selected) {
     this.select.emit(selected);
